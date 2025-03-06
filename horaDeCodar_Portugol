@@ -1,0 +1,156 @@
+programa {
+  funcao inicio() {
+    
+    //ex01
+    cadeia nomeDoCarro = "fusca"
+    escreva("O nome do carro é ", nomeDoCarro)
+
+    //ex02
+    cadeia nomeDoUsuario
+    escreva("Qual seu nome? ")
+    leia(nomeDoUsuario)
+
+    escreva("Óla, ", nomeDoUsuario)
+
+    //ex03
+    cadeia nome
+    inteiro idade
+
+    escreva("Qual o seu nome? ")
+    leia(nome)
+
+    escreva("Qual a sua idade? ")
+    leia(idade)
+
+    escreva("Olá, ", nome, "! a sua idade é ", idade)
+  }
+
+    //ex04
+    funcao retangulo() {
+
+    inteiro base
+    inteiro altura
+
+    escreva("Qual a base do retângulo? ")
+    leia(base)
+
+    escreva("Qual a altura do retângulo? ")
+    leia(altura)
+
+    inteiro resultado = base * altura
+
+    escreva("A area do retângulo é ", resultado)
+
+    quadrado()
+
+  }
+
+  funcao quadrado() {
+    
+    inteiro lado
+
+    escreva("Qual o lado do quadrado? ")
+    leia(lado)
+
+    inteiro resultadoQ = lado * lado
+
+    escreva("A area do quadrado é ", resultadoQ)
+
+    losango()
+
+  }
+
+  funcao losango() {
+
+    inteiro diagonalMaior
+    inteiro diagonalMenor
+
+    escreva("Qual a diagonal maior do losango? ")
+    leia(diagonalMaior)
+
+    escreva("Qual a diagonalMenor do losango? ")
+    leia(diagonalMenor)
+
+    inteiro resultadoL = diagonalMaior * diagonalMenor / 2
+
+    escreva("A area do losango é ", resultadoL)
+
+    trapezio()
+
+  }
+
+  funcao trapezio() {
+
+    inteiro baseMaior
+    inteiro baseMenor
+    inteiro h
+
+    escreva("Qual a base maior do trapezio? ")
+    leia(baseMaior)
+
+    escreva("Qual a base menor do trapezio? ")
+    leia(baseMenor)
+
+    escreva("Qual a altura do trapezio? ")
+    leia(h)
+
+    inteiro resultadoT = (baseMaior + baseMenor) * h / 2
+
+    escreva("A area do Trapezio é ", resultadoT)
+
+    paralelogramo()
+
+  }
+
+  funcao paralelogramo() {
+
+    inteiro base
+    inteiro altura
+
+    escreva("Qual a base do paralelogramo? ")
+    leia(base)
+
+    escreva("Qual a altura do paralelogramo")
+    leia(altura)
+
+    inteiro resultadoP = base * altura
+
+    escreva("A area do paralelogramo é ", resultadoP)
+
+    triangulo()
+
+  }
+
+  funcao triangulo() {
+
+    inteiro base
+    inteiro altura
+
+    escreva("Qual a base do triangulo? ")
+    leia(base)
+
+    escreva("Qual a altura do triangulo? ")
+    leia(altura)
+
+    inteiro resultadoTr = base * altura / 2 
+
+    escreva("A area do triangulo é ", resultadoTr)
+
+    circulo()
+    
+  }
+
+  funcao circulo() {
+
+    real pi = 3.14
+    inteiro r
+
+    escreva("Qual o raio do circulo? ")
+    leia(r)
+
+    inteiro resultadoR = r * r
+    inteiro resultadoC = pi * resultadoR
+
+    escreva("A area do circulo é ", resultadoC)
+  }
+}
