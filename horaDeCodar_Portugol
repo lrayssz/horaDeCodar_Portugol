@@ -28,18 +28,18 @@ programa {
     //ex04
     funcao retangulo() {
 
-    inteiro base
-    inteiro altura
+    inteiro baseRetangulo
+    inteiro alturaRetangulo
 
     escreva("Qual a base do retângulo? ")
-    leia(base)
+    leia(baseRetangulo)
 
     escreva("Qual a altura do retângulo? ")
-    leia(altura)
+    leia(alturaRetangulo)
 
-    inteiro resultado = base * altura
+    inteiro resultadoR = baseRetangulo * alturaRetangulo
 
-    escreva("A area do retângulo é ", resultado)
+    escreva("A area do retângulo é ", resultadoR)
 
     quadrado()
 
@@ -47,12 +47,12 @@ programa {
 
   funcao quadrado() {
     
-    inteiro lado
+    inteiro ladoQuadrado
 
     escreva("Qual o lado do quadrado? ")
-    leia(lado)
+    leia(ladoQuadrado)
 
-    inteiro resultadoQ = lado * lado
+    inteiro resultadoQ = ladoQuadrado * ladoQuadrado
 
     escreva("A area do quadrado é ", resultadoQ)
 
@@ -62,16 +62,16 @@ programa {
 
   funcao losango() {
 
-    inteiro diagonalMaior
-    inteiro diagonalMenor
+    inteiro diagonalMaiorL
+    inteiro diagonalMenorL
 
     escreva("Qual a diagonal maior do losango? ")
-    leia(diagonalMaior)
+    leia(diagonalMaiorL)
 
     escreva("Qual a diagonalMenor do losango? ")
-    leia(diagonalMenor)
+    leia(diagonalMenorL)
 
-    inteiro resultadoL = diagonalMaior * diagonalMenor / 2
+    inteiro resultadoL = diagonalMaiorL * diagonalMenorL / 2
 
     escreva("A area do losango é ", resultadoL)
 
@@ -81,20 +81,20 @@ programa {
 
   funcao trapezio() {
 
-    inteiro baseMaior
-    inteiro baseMenor
-    inteiro h
+    inteiro baseMaiorTrapezio
+    inteiro baseMenorTrapezio
+    inteiro alturaTrapezio
 
     escreva("Qual a base maior do trapezio? ")
-    leia(baseMaior)
+    leia(baseMaiorTrapezio)
 
     escreva("Qual a base menor do trapezio? ")
-    leia(baseMenor)
+    leia(baseMenorTrapezio)
 
     escreva("Qual a altura do trapezio? ")
-    leia(h)
+    leia(alturaTrapezio)
 
-    inteiro resultadoT = (baseMaior + baseMenor) * h / 2
+    inteiro resultadoT = (baseMaiorTrapezio + baseMenorTrapezio) * alturaTrapezio / 2
 
     escreva("A area do Trapezio é ", resultadoT)
 
@@ -104,16 +104,16 @@ programa {
 
   funcao paralelogramo() {
 
-    inteiro base
-    inteiro altura
+    inteiro baseParalelogramo
+    inteiro alturaParalelogramo
 
     escreva("Qual a base do paralelogramo? ")
-    leia(base)
+    leia(baseParalelogramo)
 
     escreva("Qual a altura do paralelogramo")
-    leia(altura)
+    leia(alturaParalelogramo)
 
-    inteiro resultadoP = base * altura
+    inteiro resultadoP = baseParalelogramo * alturaParalelogramo
 
     escreva("A area do paralelogramo é ", resultadoP)
 
@@ -123,16 +123,16 @@ programa {
 
   funcao triangulo() {
 
-    inteiro base
-    inteiro altura
+    inteiro baseTriangulo
+    inteiro alturaTriangulo
 
     escreva("Qual a base do triangulo? ")
-    leia(base)
+    leia(baseTriangulo)
 
     escreva("Qual a altura do triangulo? ")
-    leia(altura)
+    leia(alturaTriangulo)
 
-    inteiro resultadoTr = base * altura / 2 
+    inteiro resultadoTr = baseTriangulo * alturaTriangulo / 2 
 
     escreva("A area do triangulo é ", resultadoTr)
 
@@ -143,13 +143,12 @@ programa {
   funcao circulo() {
 
     real pi = 3.14
-    inteiro r
+    inteiro raioCirculo
 
     escreva("Qual o raio do circulo? ")
-    leia(r)
+    leia(raioCirculo)
 
-    inteiro resultadoR = r * r
-    inteiro resultadoC = pi * resultadoR
+    inteiro resultadoC = pi * (raioCirculo * raioCirculo)
 
     escreva("A area do circulo é ", resultadoC)
   }
